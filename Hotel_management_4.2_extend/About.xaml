@@ -1,0 +1,44 @@
+﻿<Window x:Class="Hotel_management_4._2_extend.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="580" Width="500"  ResizeMode="CanMinimize" Background="#FF130505" Icon="image/icon0.png" 
+        WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" BorderThickness=".1" BorderBrush="#672FBB"
+         MouseLeftButtonDown="Border_MouseLeftButtonDown_1"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="104"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,0,45" Grid.RowSpan="2" Background="#0D2481">
+            <Label Content="Hotel Peace" HorizontalAlignment="Left" Margin="171,16,0,0" VerticalAlignment="Top" Width="191" Height="51" 
+                   Foreground="#F6F8DA" FontSize="24" FontFamily="Showcard Gothic"/>
+            <Label Content="Commited to World Class Service" HorizontalAlignment="Left" Margin="188,45,0,0" VerticalAlignment="Top" Width="174" Foreground="#C4920A" FontFamily="Modern No. 20" FontStyle="Italic"/>
+            <Image HorizontalAlignment="Left" Height="54" Margin="117,13,0,0" VerticalAlignment="Top" Width="58" Source="image/icon0.png"/>
+            <Button HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Margin="0,28,0,41" Click="Button_Click_1" Height="Auto" Width="52">
+                <Image Source="image/ext.png" Stretch="Uniform" Width="26" Height="20"/>
+            </Button>
+            <Button HorizontalAlignment="Right" Margin="0,28,30,35" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2" Width="45">
+                <Image Source="image/btn_minimize.png" Width="20"/>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,55,0,0" Grid.RowSpan="2" Background="#F6F8DA">
+
+            <Label Content="About Hotel Peace" Foreground="#0D2481"  FontFamily="Modern No. 20" FontStyle="Italic" HorizontalAlignment="Left" FontSize="18" Margin="177,26,0,0" VerticalAlignment="Top" Width="146" Height="30"/>
+            <Image Source="image/back3.png" VerticalAlignment="Bottom" Margin="0,0,-3,0"/>
+            <Image Source="image/icon1.png" Margin="391,326,0,25"/>
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="503" Height="605" Margin="0,56,-3,-176" >
+
+                <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto"  Height="408" Margin="0,0,10,0">
+                    <Label VerticalAlignment="Top" FontFamily="Vrinda" FontSize="14" Height="603" Foreground="Black">
+                        <TextBlock Height="603" Width="444"><Bold><Run Text="Existing System Overview:"/></Bold><LineBreak/><Run Text="Hotels are the place where you stay, eat meals and utilize their other"/><LineBreak/><Run Text="services. As computer has merged with man as single entity so a"/><LineBreak/><Run Text="computerized application can be developed that can handle Hotel"/><LineBreak/><Run Text="Management System (HMS)."/><LineBreak/><Bold><Run Text="Existing System :"/></Bold><LineBreak/><Run Text="The existing system of Hotel Management was manual."/><LineBreak/><Run Text="All the daily routines is carried out manually and the records"/><LineBreak/><Run Text="are maintained in the record books or the registers."/><LineBreak/><Bold><Run Text="Booking:"/></Bold><LineBreak/><Run Text="The customer used to make enquiry for rooms available, and"/><LineBreak/><Run Text="then depending upon the status he used to make booking."/><LineBreak/><Run Text="All the data the receptionist used to give the customer was "/><LineBreak/><Run Text="based on paper works, there was no clear idea of the status"/><LineBreak/><Run Text="of rooms as they did not update automatically."/><LineBreak/><Bold><Run Text="Food Order:"/></Bold><LineBreak/><Run Text="The customer gives the food order to the waiter, and then"/><LineBreak/><Run Text="the waiter pass that order to the food department."/><LineBreak/><Bold><Run Text="Bill Generation:"/></Bold><LineBreak/><Run Text="The clerk operates the bill department he used to generate the"/><LineBreak/><Run Text="bill of the customer depending upon the services utilized by "/><LineBreak/><Run Text="the customer."/><LineBreak/><Bold><Run Text="Inventory:"/></Bold><LineBreak/><Run Text="The inventory manager manages the inventory as he checks the"/><LineBreak/><Run Text="status of the inventory and as per that he order places the"/><LineBreak/><Run Text="order."/><LineBreak/><Bold><Run Text="Report:"/></Bold><LineBreak/><Run Text="The administrator views all the report of the various departments,"/><LineBreak/><Run Text="to check"/><LineBreak/><Run Text="the progress of the hotel and to make the necessary changes."/></TextBlock>
+                    </Label>
+                </ScrollViewer>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

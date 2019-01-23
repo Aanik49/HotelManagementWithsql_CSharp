@@ -1,0 +1,46 @@
+﻿<Window x:Class="Hotel_management_4._2_extend.Expences"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Expences" Height="580" Width="500" ResizeMode="CanMinimize" Icon="image/icon0.png"
+         WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" BorderThickness=".1" BorderBrush="#672FBB"
+        MouseLeftButtonDown="Border_MouseLeftButtonDown_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,0,45" Grid.RowSpan="2" Background="#0D2481">
+            <Label Content="Hotel Peace" HorizontalAlignment="Left" Margin="171,16,0,0" VerticalAlignment="Top" Width="191" Height="51" 
+                   Foreground="#F6F8DA" FontSize="24" FontFamily="Showcard Gothic"/>
+            <Label Content="Commited to World Class Service" HorizontalAlignment="Left" Margin="188,45,0,0" VerticalAlignment="Top" Width="174" Foreground="#C4920A" FontFamily="Modern No. 20" FontStyle="Italic"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="116,11,0,0" VerticalAlignment="Top" Width="58" Source="image/icon0.png"/>
+            <Button HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Margin="0,28,0,41" Click="Button_Click_1" Height="Auto" Width="52">
+                <Image Source="image/ext.png" Stretch="Uniform" Width="26" Height="20"/>
+            </Button>
+            <Button HorizontalAlignment="Right" Margin="0,28,30,35" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2" Width="45">
+                <Image Source="image/btn_minimize.png" Width="20"/>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,55,0,0" Grid.RowSpan="2" Background="#F6F8DA">
+            <TextBox x:Name="txt_type" HorizontalAlignment="Left" Height="34" Margin="133,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" BorderBrush="#FF29A6E0" Foreground="#FF131313">
+                <TextBox.Background>
+                    <ImageBrush/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="txt_amount" HorizontalAlignment="Left" Height="35" Margin="133,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="#FF232020" BorderBrush="#FF18A1D4">
+                <TextBox.Background>
+                    <ImageBrush/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="txt_date" HorizontalAlignment="Left" Height="34" Margin="133,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="#FF0F0E0E" BorderBrush="#FF1278BF">
+            </TextBox>
+            <Label Content="Cost Type" HorizontalAlignment="Left" Margin="45,88,0,0" VerticalAlignment="Top" Width="83" Height="32" Foreground="Black"/>
+            <Label Content="Amount" HorizontalAlignment="Left" Margin="45,160,0,0" VerticalAlignment="Top" Width="83" Height="42" Foreground="Black"/>
+            <Label Content="Date" HorizontalAlignment="Left" Margin="45,232,0,0" VerticalAlignment="Top" Width="83" Height="23" Foreground="Black"/>
+            <Image Source="image/icon1.png" Margin="400,293,0,20"/>
+            <Button x:Name="btn_expance_submit" Content="Submit" Background="#0D2481" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top" Width="77" Click="btn_expance_submit_click"/>
+            <Label Content="Expenses" Foreground="#0D2481"  FontFamily="Modern No. 20" FontStyle="Italic" HorizontalAlignment="Left" FontSize="18" Margin="218,26,0,0" VerticalAlignment="Top" Width="101" Height="30"/>
+        </Grid>
+    </Grid>
+</Window>

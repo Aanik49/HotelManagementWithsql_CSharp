@@ -1,0 +1,40 @@
+﻿<Window x:Class="Hotel_management_4._2_extend.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dashboard" Height="580" Width="500"  ResizeMode="CanMinimize" Icon="image/icon0.png"
+         WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" BorderThickness=".1" BorderBrush="#672FBB"
+        MouseLeftButtonDown="Border_MouseLeftButtonDown_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="104"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,0,45" Grid.RowSpan="2" Background="#0D2481">
+            <Label Content="Hotel Peace" HorizontalAlignment="Left" Margin="171,16,0,0" VerticalAlignment="Top" Width="191" Height="51" 
+                   Foreground="#F6F8DA" FontSize="24" FontFamily="Showcard Gothic"/>
+            <Label Content="Commited to World Class Service" HorizontalAlignment="Left" Margin="188,45,0,0" VerticalAlignment="Top" Width="174" Foreground="#C4920A" FontFamily="Modern No. 20" FontStyle="Italic"/>
+            <Image HorizontalAlignment="Left" Height="61" Margin="116,11,0,0" VerticalAlignment="Top" Width="58" Source="image/icon0.png"/>
+            <Button HorizontalAlignment="Right" Background="Transparent" BorderBrush="Transparent" Margin="0,28,0,41" Click="Button_Click_1" Height="Auto" Width="52">
+                <Image Source="image/ext.png" Stretch="Uniform" Width="26" Height="20"/>
+            </Button>
+            <Button HorizontalAlignment="Right" Margin="0,28,30,35" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2" Width="45">
+                <Image Source="image/btn_minimize.png" Width="20"/>
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,55,0,0" Grid.RowSpan="2" Background="#F6F8DA">
+            <Label Content="DashBoard" Foreground="#0D2481"  FontFamily="Modern No. 20" FontStyle="Italic" HorizontalAlignment="Left" FontSize="18" Margin="204,26,0,0" VerticalAlignment="Top" Width="95" Height="30"/>
+            <Image Source="image/back3.png" VerticalAlignment="Bottom" Margin="0,0,-3,0"/>
+            <Image Source="image/icon1.png" Margin="391,326,0,25"/>
+            <TextBox x:Name="txt_dash" HorizontalAlignment="Left" Height="38" Margin="193,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" BorderBrush="Black"/>
+            <Button x:Name="btn_publish" Content="Publish" HorizontalAlignment="Left" Margin="233,230,0,0" VerticalAlignment="Top" Width="81" Click="btn_publish_click"/>
+            <TextBox x:Name="txt_no" HorizontalAlignment="Left" Height="38" Margin="193,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" BorderBrush="#FF403737"/>
+            <Button x:Name="btn_show" Content="Show" HorizontalAlignment="Left" Margin="136,230,0,0" VerticalAlignment="Top" Width="75" Click="btn_show_click"/>
+            <Button x:Name="btn_delete" Content="Delete" HorizontalAlignment="Left" Margin="332,230,0,0" VerticalAlignment="Top" Width="75" Click="btn_delete_click"/>
+            <Label Content="No" HorizontalAlignment="Left" Margin="57,102,0,0" VerticalAlignment="Top" Width="113" Height="38" FontFamily="Segoe UI Semibold" FontSize="18"/>
+            <Label Content="Message" HorizontalAlignment="Left" Margin="57,167,0,0" VerticalAlignment="Top" Width="113" Height="38" FontFamily="Segoe UI Semibold" FontSize="18"/>
+        </Grid>
+
+    </Grid>
+</Window>
